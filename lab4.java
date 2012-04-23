@@ -35,7 +35,6 @@ import java.util.regex.*;
 					if (match.matches())
 					{
 						text = text + "file_name:" + i + ": " + tmp + "\n";
-						//text += "\n";
 					}
 					tmp = reader.readLine();
 					i++;
@@ -45,11 +44,6 @@ import java.util.regex.*;
 				reader.close();
 				writer.close();
 			}
-			catch(Exception exptn)
-			{
-				/*if (tmp == "")
-					JOptionPane.showMessageDialog(null, "End of program");
-				else JOptionPane.showMessageDialog(null, tmp);*/
-			}
+			catch(Exception exptn)	{}
 		}
 	}
